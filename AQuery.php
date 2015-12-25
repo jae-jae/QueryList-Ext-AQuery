@@ -20,7 +20,7 @@ abstract class AQuery
         $args = func_get_args();
         array_shift($args);
         $getInstance = new ReflectionMethod("QL\QueryList::getInstance");
-        return $getInstance->invokeArgs(null,args);
+        return $getInstance->invokeArgs(null,$args);
     }
 
 }
